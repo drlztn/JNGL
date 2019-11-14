@@ -3,3 +3,8 @@ JNGL is a set of tools used to create graphic compositions inspired by wildstyle
 
 ## Processing
 For the processing sketch you will [controlP5](http://www.sojamo.de/libraries/controlP5/) and [HYPE](https://www.hypeframework.com/)
+
+### DRLZTN
+- [Facebook](https://www.facebook.com/derealizationn/)
+- [Instagram](https://www.instagram.com/derealizationn_/)
+
