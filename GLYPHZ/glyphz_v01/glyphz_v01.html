@@ -1,0 +1,145 @@
+<!-- GLYPHZ v0.1 BY DRLZTN @ 2020 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GLYPHZ</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/style.css">
+		<script defer src="scripts/node_modules/@svgdotjs/svg.js/dist/svg.min.js"></script>
+		<script defer src="scripts/node_modules/jszip/dist/jszip.min.js"></script>
+		<script defer src="scripts/node_modules/file-saver/dist/FileSaver.min.js"></script>
+		<script defer src="scripts/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+		<script defer src="scripts/node_modules/tippy.js/dist/tippy-bundle.umd.min.js"></script>
+		<script defer src="glyphz_v01.js"></script>
+	</head>
+	<body id="body">
+		<article class="container">
+			<div id="info">
+				<a href="https://drlztn.github.io">
+					<img src="resources/images/logo_200.png" style="height: 120px">
+				</a>
+				<p>GLYPHZ v0.1</p>
+				<a class="link_normal" href="https://drlztn.github.io/jngl.html">INFO</a>
+				<a class="link_normal" href="">LICENCE </a>
+				<a class="link_normal" href="https://github.com/drlztn/jngl">GITHUB</a>
+			</div>
+			<div id="menu_canvas">
+				<div id="canvas"></div>
+				<div id="crear_descargar">
+					<div id=crear>
+						<button class="boton" id="boton_crear" type="button">
+						 	<img class="icono_boton" src="resources/images/cached-white-48dp.svg" aria-hidden="true">
+						</button>
+					</div>
+					<div id="menu_descarga">
+						<button class="boton" id="boton_descargar" type="button">
+							<img class="icono_boton" src="resources/images/save_alt-white-48dp.svg" aria-hidden="true">
+						</button>
+						<form class="number_form" id="cantidad_grafemas">
+							<input type="number" min="1" max="1000" name="Cantidad" id="cantidad_numero">
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="menu_opciones">
+				<div id="checks">
+					<form class="check_form">
+						<input class="check" id="arabe" type="checkbox" name="Árabe" value="arabe">
+						<label for="Árabe">
+							<span></span>ÁRABE
+							<a class="link_info" href="https://en.wikipedia.org/wiki/Arabic_(Unicode_block)">ⓘ</a>
+						</label><br>
+					</form>
+					<form class="check_form">
+						<input id="devanagari" type="checkbox" name="Devanagari" value="devanagari">
+						<label for="Devanagari">DEVANGARI
+							<a class="link_info" href="https://en.wikipedia.org/wiki/Devanagari_(Unicode_block)">ⓘ</a>
+						</label><br>
+					</form>
+					<form class="check_form">
+						<input id="hebreo" type="checkbox" name="Hebreo" value="hebreo">
+						<label for="Hebreo">HEBREO
+						<a class="link_info" href="https://en.wikipedia.org/wiki/Hebrew_(Unicode_block)">ⓘ</a>
+					</label><br>
+					</form>
+					<form class="check_form">
+						<input id="tibetano" type="checkbox" name="Tibetano" value="tibetano">
+						<label for="Tibetano">TIBETANO
+						<a class="link_info" href="https://en.wikipedia.org/wiki/Tibetan_(Unicode_block)">ⓘ</a>
+					</label><br>
+					</form>
+					<form class="check_form">
+						<input id="Hangul" type="checkbox" name="Hangul" value="hangul">
+						<label for="Hangul">HANGUL
+						<a class="link_info" href="https://en.wikipedia.org/wiki/Hangul_Jamo_(Unicode_block)">ⓘ</a>
+					</label><br>
+					</form>
+					<form class="check_form">
+						<input id="hiragana" type="checkbox" name="Hiragana" value="hiragana">
+						<label for="Hiragana">HIRAGANA
+						<a class="link_info" href="https://en.wikipedia.org/wiki/Hiragana_(Unicode_block)">ⓘ</a>
+					</label><br>
+					</form>
+					<form class="check_form">
+						<input id="katakana" type="checkbox" name="Katakana" value="katakana">
+						<label for="Katakana">KATAKANA
+						<a class="link_info" href="https://en.wikipedia.org/wiki/Katakana_(Unicode_block)">ⓘ</a>
+					</label><br>
+					</form>
+					<form class="check_form">
+						<input id="griego" type="checkbox" name="Griego" value="griego">
+						<label for="Griego">GRIEGO
+						<a class="link_info" href="https://en.wikipedia.org/wiki/Greek_and_Coptic">ⓘ</a>
+					</label><br>
+					</form>
+					<form class="check_form">
+						<input id="armenio" type="checkbox" name="Armenio" value="armenio">
+						<label for="Armenio">ARMENIO
+						<a class="link_info" href="https://en.wikipedia.org/wiki/Armenian_(Unicode_block)">ⓘ</a>
+					</label><br>
+					</form>
+					<form class="check_form">
+						<input id="georgiano" type="checkbox" name="Georgiano" value="georgiano">
+						<label for="Georgiano">GEORGIANO
+						<a class="link_info" href="https://en.wikipedia.org/wiki/Georgian_(Unicode_block)">ⓘ</a>
+					</label><br>
+					</form>
+					<form class="check_form">
+						<input id="glagolitico" type="checkbox" name="Glagolítico" value="glagolitico">
+						<label for="Glagolítico">GLAGOLÍTICO
+						<a class="link_info" href="https://en.wikipedia.org/wiki/Glagolitic_(Unicode_block)">ⓘ</a>
+					</label><br>
+					</form>
+					<form class="check_form">
+						<input id="cirilico" type="checkbox" name="Cirílico" value="cirilico">
+						<label for="Cirilico">CIRÍLICO
+						<a class="link_info" href="https://en.wikipedia.org/wiki/Cyrillic_(Unicode_block)">ⓘ</a>
+					</label><br>
+					</form>
+					<form class="check_form">
+						<input id="latino" type="checkbox" name="Latino" value="latino">
+						<label for="Latino">LATINO
+						<a class="link_info" href="https://en.wikipedia.org/wiki/Basic_Latin_(Unicode_block)">ⓘ</a>
+					</label><br>
+					</form>
+					<form class="check_form">
+						<input id="runico" type="checkbox" name="Runico" value="runico">
+						<label for="Runico">RÚNICO
+						<a class="link_info" href="https://en.wikipedia.org/wiki/Runic_(Unicode_block)">ⓘ</a>
+					</label><br>
+					</form>
+				</div>
+				<div id="opciones">
+					<form class="slider">
+						<label for="Rotacion">ROTATION</label><br>
+						<input type="range" id="rotacion_graf" name="Rotacion" min="0" max="360">
+					</form>
+					<form class="slider">
+						<label for="Rotacion">SCALE</label><br>
+						<input type="range" id="tamaño_graf" name="Tamaño" min="0.4" max="0.7" step="0.01">
+					</form>
+				</div>
+			</div>
+		</article>
+	</body>
+</html>
