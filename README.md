@@ -3,7 +3,7 @@ JNGL is a set of tools used to create graphic compositions inspired by wildstyle
 
 ## [GLYPHZ](/GLYPHZ)
 ![TAGZ SCREENSHOT](/GLYPHZ/glyphz_screenshot.png)
-GLYPHZ is a JavaScript program that uses [SVG.js](https://svgjs.com/docs/3.0/) to combine different writing systems to create nonexistent graphemes and alphabets.
+GLYPHZ is a JavaScript program that uses [SVG.js](https://svgjs.com/docs/3.0/) to combine different writing systems to create nonexistent graphemes and alphabets that can be downloaded and modified.
 
 ## [TAGZ](/TAGZ)
 ![TAGZ SCREENSHOT](/TAGZ/tagz_screenshot.png)
